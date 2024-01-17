@@ -13,3 +13,9 @@ function getRandomNumber(min, max) {
 
 const numeroComputer = getRandomNumber(1, 5);
 console.log(numeroComputer)
+
+
+// SOMMA DUE NUMERI
+
+const somma = numeroUtente + numeroComputer
+console.log(somma)
