@@ -11,6 +11,8 @@
 2. Creare una funzione per capire se la parola inserita è palindroma:
 
     - conservare in una costante la parola inserita dall'utente.
+    - generare la stessa parola al contrario
+    - se la second parola resta uguale alla prima allora è palindroma altrimenti no
 
 
 
