@@ -1,7 +1,10 @@
 
+
+
+
 //  NUMERO UTENTE 
 
-const scelta = prompt('Scegli pari o dispari')
+const sceltaUtente = prompt('Scegli pari o dispari')
 const numeroUtente = parseInt(prompt('Scegli un numero da 1 a 5'))
 
 // NUMERO COMPUTER
@@ -17,5 +20,35 @@ console.log(numeroComputer)
 
 // SOMMA DUE NUMERI
 
-const somma = numeroUtente + numeroComputer
-console.log(somma)
+function addizione (a, b){
+    const somma = a + b;
+    return somma;
+}
+
+const result = addizione(numeroUtente, numeroComputer)
+console.log(result)
+
+// STABILIAMO CON UNA FUNZIONE SE LA SOMMA DEI NUMERI E' PARI O DISPARI
+
+let game
+
+function verdetto (result){
+    if (result % 2 == 0){
+        game = ('pari')
+    } else{
+        game=('dispari')
+    }
+    console.log(`la somma è ${game}`)
+}
+
+const verdettoFinale = verdetto(result)
+
+//DICHIARO CHI HA VINTO
+
+if(sceltaUtente === game){
+    console.log('hai vinto')
+} else {
+    console.log('hai perso')
+}
+
+
